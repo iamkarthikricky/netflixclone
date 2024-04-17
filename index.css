@@ -1,0 +1,433 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    padding: 0;
+    margin: 0;
+    height:100%;
+}
+.y{
+    border: 1px solid red;
+}
+header{
+    background-color: #000;
+    padding-top: 15px;
+}
+
+
+.netflix-logo{
+    width: 120px;
+}
+
+
+
+.header-container{
+    margin-bottom: 10px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+@media screen and (min-width:375px) {
+    .header-container{
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+.dropdown-btn{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+    cursor: pointer;
+    height: 35px;
+    width: 80px;
+    background-color: transparent;
+    padding: 5px;
+    border: 1px solid silver;
+    border-radius: 5px;
+}
+
+.active-lng{
+    display: none;
+}
+
+@media screen and (min-width:768px) {
+
+    .dropdown-btn{
+        width: 120px;
+        align-items: first baseline;
+    }
+    
+    .active-lng{
+        display: block;
+        font-size: 16px;
+        color: #ffffff;
+        font-weight: 500;
+    }
+}
+.sign-in-btn{
+    border-radius: 5px;
+    margin-left: 10px;
+    font-family: 'Open Sans';
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    width: 90px;
+    background-color: red;
+    color: #ffffff;
+}
+
+.dropdown .selected{
+    background-color: aqua;
+}
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+}
+@media screen and (min-width:768px) {
+    .form-container{
+        flex-direction: row;
+        justify-content: center;
+        align-items:first baseline;
+    }
+}
+.flex-col-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main-banner-container{
+    background-image: url("https://res.cloudinary.com/dlwydxzdi/image/upload/v1713246010/NetflixClone/IN-en-20240408-popsignuptwoweeks-perspective_alpha_website_small_kkbotr.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.banner-section{
+    width: 100%;
+    height: 100vh;
+    background: rgb(0 0 0 / 40%);
+}
+.banner-section .container{
+    width: 85%;
+}
+@media screen and (min-width:768px) {
+    .banner-section .container{
+        width: 100%;
+    }
+}
+.section-heading{
+   
+   font-size:36px;
+    color: #ffffff;
+    font-weight: bold;
+    font-weight: 700;
+}
+.section-description{
+    font-size: 22px;
+    color: #ffffff;
+    font-weight: 500;
+}
+@media screen and (min-width:768px) {
+    .section-heading{
+        font-size: 36px;
+    }
+    .section-description{
+        font-size: 26px;
+    }
+}
+.input-field{
+    font-size: 18px;
+    padding-left: 20px;
+    color: #f0f0f0;
+    width: 100%;
+    height: 60px;
+    background-color: #000;
+    border: 1px solid silver;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.get-started-btn{
+    margin-bottom: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    border-radius: 5px;
+    font-family: bolder;
+    color: #ffffff;
+    height: 60px;
+    background-color: red;
+    width: 200px;
+}
+
+.error-msg{
+    font-size: 16px;
+    color: red;
+    display: none;
+}
+
+.form-group {
+    position: relative;
+}
+   
+label {
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+    transition: 0.2s ease-out;
+    pointer-events: none;
+    color: #f0f0f0;
+    text-align: center
+}
+
+.demo{
+    top: 0;
+}
+input:focus + label,.form-group:focus-within label {
+    top: 0;
+    font-size: 0.8rem;
+    color: #f0f0f0;
+}
+  
+
+.features-container{
+    padding-top: 20px;
+    border-top:10px solid gray ;
+    background-color: #000;
+    padding-bottom: 20px;
+}
+
+.f1{
+    text-align: center;
+}
+@media screen and (min-width:1000px) {
+   .f1{
+    text-align: unset;
+   }
+}
+
+.features-flex-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (min-width:1000px) {
+    .features-flex-container{
+        flex-direction: row;
+        align-items:center;
+    }
+}
+
+.video-container {
+    margin: 0;
+    position: absolute;
+    width: 100%;
+    height: 250px;
+    z-index: 1; /* Make sure the video stays behind other content */
+}
+
+.video {
+    position: absolute;
+    width:260px;
+    height: 250px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    height:250px; /* Set height according to your needs */
+    z-index: 1; /* Make sure the image stays above the video */
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the container */
+}
+@media screen and (min-width:768px) {
+    .video-container{
+        width: 600px;
+        height: 350px;
+    }
+    .video{
+        width: 500px;
+    }
+    .image-container{
+        width: 600px;
+        height: 350px;
+    }
+}
+
+.accordion{
+    margin-top: 20px;
+}
+
+.accordion .accordion-item {
+    border: none;
+    background-color: rgb(45,45,45);
+    margin-bottom: 10px;
+}
+.accordion .accordion-item .accordion-button:not(.focus):hover{
+    background-color: rgba(128, 128, 128, 0.7);
+}
+.accordion .accordion-item .accordion-button:not(.focus){
+    background-color: rgb(45,45,45);
+    box-shadow: none;
+    color: #ffffff;
+    height: 80px;
+}
+.accordion .accordion-body{
+    color: #ffffff;
+}
+.accordion .accordion-item .accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 384 512'%3E%3C!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--%3E%3Cpath fill='%23FFFFFF' d='M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z'/%3E%3C/svg%3E");
+ 
+
+}
+.accordion .accordion-item .accordion-button::after{
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'%3E%3C!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--%3E%3Cpath fill='%23FFFFFF' d='M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z'/%3E%3C/svg%3E");
+}
+
+.align{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.download{
+    height: 100%;
+    width: 100%;
+}
+.download-container{
+    position: relative;
+    display: inline-block;
+}
+.download-status-container{
+    padding: 5px;
+    position: absolute;
+    bottom: 0;
+    background-color: #000;
+    box-sizing: border-box;
+    height: 80px;
+    width: 100%;
+    border-radius: 4px;
+
+    border: 2px solid rgba(128, 128, 128, 0.7);
+    box-shadow: 0 0 2em 0 rgb(0,0,0);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+@media screen and (min-width:425px) and (max-width:767px){
+    .download-status-container{
+        max-width:80%;
+        left: 10%;
+    }
+}
+@media screen and (min-width:768px) and (max-width:1023px) {
+    .download-status-container{
+        max-width: 70%;
+        left: 15%;
+    }
+}
+@media screen and (min-width:1024px) {
+    .download-status-container{
+        max-width: 60%;
+        left: 20%;
+    }
+    .order{
+        order: 2;
+    }
+    .download-container{
+        order: 1;
+    }
+}
+
+.download-status-content{
+    margin-left: 10px;
+    font-size: 14px;
+    line-height: 3px;
+    color: #ffffff;
+}
+.stranger-things-img{
+    height: 100%;
+}
+
+
+
+
+
+.stream-video-container {
+    margin: 0;
+    position: absolute;
+    width: 100%;
+    height: 250px;
+    z-index: 1; /* Make sure the video stays behind other content */
+}
+
+.stream-video {
+    position: absolute;
+    width:180px;
+    height: 180px;
+    top: 32%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.stream-image-container {
+    position: relative;
+    width: 100%;
+    height:250px; /* Set height according to your needs */
+    z-index: 1; /* Make sure the image stays above the video */
+}
+
+.stream-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the container */
+}
+@media screen and (min-width:768px) {
+    .stream-video-container{
+        width: 600px;
+        height: 350px;
+    }
+    .stream-video{
+        top: 50%;
+        left: 40%;
+        height: 300px;
+        width: 380px;
+    }
+    .stream-image-container{
+        width: 500px;
+        height: 450px;
+    }
+}
+
+.footer-description{
+    text-decoration: none;
+    font-size: 18px;
+    color: #ffffffB3;
+}
+
+@media screen and (min-width:768px) {
+    .footer-description{
+        font-size: 22px;
+    }
+}

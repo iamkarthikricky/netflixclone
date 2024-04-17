@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone</title>
+    <link rel="stylesheet" type="text/css" href="index.css" />
+
+    <script src="https://kit.fontawesome.com/9d51afb1db.js" crossorigin="anonymous"></script>
+    
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+   <header>
+        <div class="container">
+            <div class="row">
+                <div class="header-container">
+                    <img src="./netflix-logo-png-2562.png" alt="netflix-logo" class="netflix-logo"/>
+                    <div class="d-flex flex-row">
+                        <div class="dropdown">
+                            <button class="dropdown-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-solid fa-language" style="color: #fff;font-size: 12px;"></i>
+                                <p class="active-lng">
+                                    हिंदी</p>
+                                <i class="fa-solid fa-caret-down" style="color: #fff;"></i>
+                            </button>
+                            <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./index.html">English</a></li>
+                            <li><a class="dropdown-item selected" href="./hindi.html">Hindi</a></li>
+                            </ul>
+                    </div>
+                    <button type="button" class="sign-in-btn">Sign In</button>
+                    </div>
+            </div>
+            </div>
+        </div>
+    </header> 
+    <section>
+        <div class="main-banner-container">
+        <div class="banner-section flex-col-container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <div class="col-12">
+                            <h1 class="section-heading">
+                                अनलिमिटेड फ़िल्में, टीवी शो के साथ भी बहुत कुछ</h1>
+                        </div>
+                        <div class="col-12">
+                            <p class="section-description">जहां चाहें देखें. जब चाहें कैंसल करें.</p>
+                        </div>
+                        <div class="col-12">
+                            <p class="section-description">देखने के लिए तैयार हैं? अपनी मेंबरशिप बनाने या रीस्टार्ट करने के लिए अपना ईमेल एड्रेस डालें.</p>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                            <form class="col-12 form-container" id="formSubmit">
+                               <div class="col-lg-2"></div>
+                                <div class="col-11 col-md-6">
+                                    <div class="form-group">
+                                        <input type="email" id="userEmail" class="input-field">
+                                        <p id="emailError" class="error-msg"><i class="fa-regular fa-circle-xmark"></i>
+                                       कृपया सही ईमेल एड्रेस डालें</p>
+                                        <label for="userEmail">ईमेल एड्रेस</label>
+                                    </div>
+                                </div>
+                                <div class="col-9 col-md-4">
+                                    <button class="get-started-btn" type="submit">शुरू करें<i class="fa-solid fa-angle-right" style="margin-left: 15px;"></i></button>
+                                </div>
+                            
+                            </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="features-container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="features-flex-container">
+                        <div class="f1 col-12 col-md-12 col-lg-6">
+                            <h1 class="section-heading">अपने टीवी पर आनंद लें</h1>
+                            <p class="section-description">स्मार्ट टीवी, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray प्लेयर के साथ ही दूसरे डिवाइस पर भी देखें.</p>
+                        </div>
+                        <div class="col-12 col-md-12 col-lg-6">
+                            <div id="video-container" class="video-container">
+                                <video autoplay muted loop class="video">
+                                    <source src="https://res.cloudinary.com/dlwydxzdi/video/upload/v1713272760/NetflixClone/video-tv-in-0819_d3xi2r.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                            
+                            <div id="image-container" class="image-container">
+                                <img src="https://res.cloudinary.com/dlwydxzdi/image/upload/v1713272759/NetflixClone/tv_c4o2il.png" class="img" alt="Background Image">
+                            </div>
+                        </div>
+        
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="features-container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                    <div class="features-flex-container">
+                        <div class="f1 col-12 col-lg-6 order">
+                            <h1 class="section-heading">ऑफ़लाइन देखने के लिए अपने शो डाउनलोड करें</h1>
+                            <p class="section-description">अपने पसंदीदा शो और फ़िल्में सेव करें, ताकि आप कभी भी इन्हें देख सकें.</p>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                    <div class="download-container">
+                        <img src="https://res.cloudinary.com/dlwydxzdi/image/upload/v1713272759/NetflixClone/mobile-0819_kt1zjh.jpg" alt="img"  class="download"/>
+                        <div class="download-status-container">
+                            <div class="align h-100">
+                                <img src="https://res.cloudinary.com/dlwydxzdi/image/upload/v1713331868/NetflixClone/boxshot_c5wtpp.png" alt="stranger-things" class="stranger-things-img"/>
+                                <div class="download-status-content">
+                                    <p class="fw-bold">Stranger Things</p>
+                                    <p style="color:#0071EB;">डाउनलोड हो रहा है...</p>
+                                </div>
+                            </div>
+                            <img src="https://res.cloudinary.com/dlwydxzdi/image/upload/v1713272759/NetflixClone/download-icon_fqvdjr.gif" class="stranger-things-img"/>
+                        </div>
+                    </div>
+                        </div>
+                </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="features-container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="features-flex-container">
+                            <div class="f1 col-12 col-md-6">
+                            <h1 class="section-heading">हर जगह देखें</h1>
+                            <p class="section-description">बिना ज़्यादा पेमेंट किए, अपने फ़ोन, टैबलेट, लैपटॉप और टीवी पर अनलिमिटेड फ़िल्में और टीवी शो स्ट्रीम करें.</p>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <div id="video-container" class="stream-video-container">
+                                    <video autoplay muted loop class="stream-video">
+                                        <source src="https://res.cloudinary.com/dlwydxzdi/video/upload/v1713331868/NetflixClone/video-devices-in_ki5j64.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div>
+                                
+                                <div id="image-container" class="stream-image-container">
+                                    <img src="https://res.cloudinary.com/dlwydxzdi/image/upload/v1713331868/NetflixClone/device-pile-in_piex6l.png" class="stream-img" alt="Background Image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="features-container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="features-flex-container">
+                            <div class="f1 col-12 col-md-6 order">
+                            <h1 class="section-heading">बच्चों के लिए प्रोफ़ाइल बनाएं</h1>
+                            <p class="section-description">बच्चों को जाने दें अपने पसंदीदा किरदारों के साथ उस रोमांचक सफ़र पर जो सिर्फ़ उनके लिए ही है - आपकी मेंबरशिप के साथ फ़्री.</p>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <img src="https://res.cloudinary.com/dlwydxzdi/image/upload/v1713372135/NetflixClone/AAAABVgKoWCAejBWO2Dxg4NyMHlC3OdKWTTdvZshvYQizpH-VvlWFbMUjVkidAc2fX5rPOS1Cu2hSJOa8cOcngrDRR5ZmZkdEu7cg0Ay_t7ysmo.png" alt="kids-special" width="100%"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <div class="features-container">
+        <div class="container">
+        <div class="row">
+            <div class="col-12">
+            <h1 class="section-heading text-center ">अक्सर पूछे जाने वाले सवाल</h1>
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Netflix क्या है?
+                     </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p>
+                            Netflix एक स्ट्रीमिंग सर्विस है जिसके ज़रिए आप हज़ारों इंटरनेट-कनेक्टेड डिवाइस पर तरह-तरह के अवॉर्ड विजेता टीवी शो, फ़िल्में, ऐनिमे, डॉक्यूमेंट्रीज़ का लुत्फ़ उठा सकते हैं.
+
+                            आप जब चाहें, जितना चाहें, बिना किसी विज्ञापन के देख सकते हैं – सारा कॉन्टेंट बहुत कम मासिक शुल्क पर. खोजने के लिए हमेशा कुछ नया होता है और हर हफ़्ते नए टीवी शो और फ़िल्में जोड़ी जाती हैं!
+
+
+                        </p>
+                    </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Netflix की कीमत कितनी है?
+                   </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                    <p>
+                        हर महीने की तय फ़ी देकर अपने स्मार्टफ़ोन, टैबलेट, स्मार्ट टीवी, लैपटॉप, या स्ट्रीमिंग डिवाइस पर Netflix देखें. हर महीने ₹149 से ₹649 तक के प्लान. कोई एक्सट्रा कीमत या कॉन्ट्रैक्ट नहीं.
+                    </p>
+                    </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        मैं कहां देख सकता हूं?
+                    </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                    <p>
+                        कहीं भी, कभी भी देखें अपने पर्सनल कंप्यूटर से या स्मार्ट टीवी, स्मार्टफ़ोन, टैबलेट, स्ट्रीमिंग मीडिया प्लेयर और गेम कंसोल सहित Netflix ऐप ऑफ़र करने वाले किसी भी इंटरनेट-कनेक्टेड डिवाइस पर तुरंत देखने के लिए, वेब पर netflix.com पर अपने Netflix अकाउंट में साइन इन करें.
+
+                        आप iOS, Android या Windows 10 ऐप से भी अपने पसंदीदा शो डाउनलोड कर सकते हैं. चलते-फिरते और बिना इंटरनेट कनेक्शन के देखने के लिए डाउनलोड का उपयोग करें. Netflix को अपने साथ कहीं भी ले जाएं.
+                    </p>
+                    </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                        मैं कैसे कैंसल करूं?
+                    </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                    <p>Netflix लचीला है. कोई परेशान करने वाले कॉन्ट्रैक्ट नहीं और कोई बंधन नहीं हैं. आप आसानी से दो क्लिक में अपना अकाउंट ऑनलाइन कैंसल कर सकते हैं. कोई कैंसलेशन फ़ीस नहीं है – अपना अकाउंट कभी भी शुरू या बंद करें.
+
+                    </p>
+                </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#headingFive" aria-expanded="false" aria-controls="collapseThree">
+                        मैं Netflix पर क्या देख सकता/सकती हूं?
+                    </button>
+                </h2>
+                <div id="headingFive" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                    <p>
+                        Netflix की बहुत बड़ी लाइब्रेरी में फ़ीचर फ़िल्मों, डॉक्यूमेंट्री, टीवी शो, ऐनिमे, अवॉर्ड-विनिंग Netflix ओरिजिनल्स के अलावा और भी बहुत कुछ है. आप जितना चाहें, कभी भी देखें.
+                    </p>
+                    </div>
+                </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSix">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#headingSix" aria-expanded="false" aria-controls="collapseThree">
+                            क्या Netflix बच्चों के लिए ठीक है?
+                        </button>
+                    </h2>
+                    <div id="headingSix" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                        <p>
+                            आपकी मेंबरशिप में Netflix किड्स एक्सपीरियंस शामिल है. बच्चे अपनी तरह से पारिवारिक टीवी शो और फ़िल्मों का आनंद लेते हैं, लेकिन आप उनके द्वारा देखे जाने वाले कॉन्टेंट को कंट्रोल कर सकते हैं.
+
+                            बच्चों की प्रोफ़ाइल में PIN से सुरक्षित पैरेंटल कंट्रोल्स होते हैं जिससे आप बच्चों को मेच्योरिटी रेटिंग वाले कॉन्टेंट देखने से रोक सकते हैं और उन टाइटल को ब्लॉक कर सकते हैं जिन्हें आप नहीं चाहते हैं कि बच्चे देखें.
+                        </p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+        </div>
+
+        <div class="col-12">
+            <p class="section-description text-center">देखने के लिए तैयार हैं? अपनी मेंबरशिप बनाने या रीस्टार्ट करने के लिए अपना ईमेल एड्रेस डालें.</p>
+        </div>
+        <div class="col-12">
+            <form class="col-12 form-container" id="formSubmit">
+               <div class="col-lg-2"></div>
+                <div class="col-11 col-md-6">
+                    <div class="form-group">
+                        <input type="email" id="userEmail" class="input-field">
+                        <p id="emailError" class="error-msg"><i class="fa-regular fa-circle-xmark"></i>
+                       कृपया सही ईमेल एड्रेस डालें</p>
+                        <label for="userEmail">ईमेल एड्रेस</label>
+                    </div>
+                </div>
+                <div class="col-9 col-md-4">
+                    <button class="get-started-btn" type="submit">शुरू करें<i class="fa-solid fa-angle-right" style="margin-left: 15px;"></i></button>
+                </div>
+            
+            </form>
+    </div>
+        </div>
+    </div>
+        </div>
+
+        <footer>
+            <div class="features-container">
+                <div class="container">
+                    <div class="row">
+                        <p class="footer-description">कोई सवाल है? <a href="tel:8009191694"> 000-800-919-1694</a> पर कॉल करें</p>
+                    <div class="col-6 col-lg-4 mt-2 mb-2">
+                        <a href="https://help.netflix.com/en/node/412" target="_self" class="footer-description">FAQ</a>
+                    </div>
+                    <div class="col-6 col-lg-4 mt-2 mb-2">
+                        <a href="https://help.netflix.com/en/" target="_self" class="footer-description">
+                            सहायता केंद्र</a>
+                    </div>
+                    <div class="col-6 col-lg-4 mt-2 mb-2">
+                        <a href="./LoginPage/loginPage.html" target="_self" class="footer-description">
+                            अकाउंट</a>
+                    </div>
+                    <div class="col-6 col-lg-4 mt-2 mb-2">
+                        <a href="https://media.netflix.com/en/" target="_self" class="footer-description">
+                            मीडिया केंद्र</a>
+                    </div>
+                    <div class="col-6 col-lg-4 mt-2 mb-2">
+                        <a href="https://ir.netflix.net/ir-overview/profile/default.aspx" target="_self" class="footer-description">इंवेस्टर संबंध</a>
+                    </div>
+                    <div class="col-6 col-lg-4 mt-2 mb-2">
+                        <a href="https://jobs.netflix.com/" target="_self" class="footer-description">
+                            नौकरियां</a>
+                    </div>
+                    <div class="col-6 col-lg-4 mt-2 mb-2">
+                        <a href="https://help.netflix.com/en/node/14361" target="_self" class="footer-description">
+                            देखने के तरीके</a>
+                    </div>
+                    <div class="col-6 col-lg-4 mt-2 mb-2">
+                        <a href="https://help.netflix.com/legal/termsofuse" target="_self" class="footer-description">
+                            उपयोग की शर्तें</a>
+                    </div>
+                    <div class="col-6 col-lg-4 mt-2 mb-2">
+                        <a href="https://help.netflix.com/legal/privacy" target="_self" class="footer-description">प्रायवेसी</a>
+                    </div>
+                    <div class="col-6 col-lg-4 mt-2 mb-2">
+                        <a href="#" target="_self" class="footer-description">
+                            कुकी प्रेफ़रेंस</a>
+                    </div>
+                    <div class="col-6 col-lg-4 mt-2 mb-2">
+                        <a href="https://help.netflix.com/en/node/134094" target="_self" class="footer-description">कॉरपोरेट जानकारी</a>
+                    </div>
+                    <div class="col-6 col-lg-4 mt-2 mb-2">
+                        <a href="https://help.netflix.com/en/contactus" target="_self" class="footer-description">
+                            हमसे संपर्क करें</a>
+                    </div>
+                    <div class="col-6 col-lg-4 mt-2 mb-2">
+                        <a href="https://fast.com/" target="_self" class="footer-description">स्पीड टेस्ट</a>
+                    </div>
+                    <div class="col-6 col-lg-4 mt-2 mb-2">
+                        <a href="https://help.netflix.com/legal/notices" target="_self" class="footer-description">
+                            कानूनी सूचनाएं</a>
+                    </div>
+                    <div class="col-6 col-lg-4 mt-2 mb-2">
+                        <a href=" https://www.netflix.com/in/browse/genre/839338" target="_self" class="footer-description">सिर्फ़ Netflix पर</a>
+                    </div>
+                    <div class="mt-2">
+                        <div class="dropdown">
+                            <button class="dropdown-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-solid fa-language" style="color: #fff;font-size: 12px;"></i>
+                                <p class="active-lng">
+                                    हिंदी</p>
+                                <i class="fa-solid fa-caret-down" style="color: #fff;"></i>
+                            </button>
+                            <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./index.html">English</a></li>
+                            <li><a class="dropdown-item selected" href="./hindi.html">Hindi</a></li>
+                            </ul>
+                    </div>
+                    <p class="footer-description mt-2">Netflix भारत</p>
+                    </div>
+                   
+                </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+    <script>
+        var userEmailEl = document.getElementById("userEmail");
+        var emailError = document.getElementById("emailError");
+    
+    
+        var formSubmitEl = document.getElementById("formSubmit");
+    
+        const emailValidator= /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    
+        function validateEmail(){
+        var validEmail = false;
+    
+        emailValidator.test(userEmailEl.value) ? ( validEmail =true) :  null;
+    
+        if (!(validEmail)){
+            emailError.style.display = 'block';
+            userEmailEl.value="";
+            userEmailEl.style.border = "1px solid red";
+        }
+        else{
+            userEmailEl.value="";
+            userEmailEl.style.border = "1px solid green"
+            
+        }
+    
+        }
+    
+        formSubmitEl.addEventListener('submit',function(event){
+            event.preventDefault();
+            validateEmail();
+         console.log('hi');
+        
+    })
+    </script>
+</body>
+</html>
